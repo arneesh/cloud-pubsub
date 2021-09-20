@@ -4,6 +4,7 @@
 const topicName = 'YOUR_TOPIC_NAME';
 const subscriptionName = 'YOUR_SUBSCRIPTION_NAME';
 
+
 // Imports the Google Cloud client library
 const {PubSub} = require('@google-cloud/pubsub');
 
