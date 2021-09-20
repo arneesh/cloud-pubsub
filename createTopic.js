@@ -1,7 +1,10 @@
 /**
- * TODO(developer): Uncomment this variable before running the sample.
+ * * INFO(developer): Pass the topic name as cli argument .
  */
-const topicName = 'YOUR_TOPIC_NAME';
+const yargs = require('yargs/yargs')
+const { hideBin } = require('yargs/helpers')
+const argv = yargs(hideBin(process.argv)).argv
+const topicName = argv.topic;
 
 // Imports the Google Cloud client library
 const {PubSub} = require('@google-cloud/pubsub');
